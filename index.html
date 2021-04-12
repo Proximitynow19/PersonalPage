@@ -10,6 +10,12 @@
       rel="stylesheet"
       href="https://kit-pro.fontawesome.com/releases/v5.15.1/css/pro.min.css"
     />
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="script.js"></script>
   </head>
   <body class="bg-indigo-900 overflow-x-hidden">
     <main
@@ -24,101 +30,99 @@
           class="rounded-full border-white border-8"
         />
         <div class="flex flex-col space-y-8 justify-center items-center">
-          <h1
-            class="text-8xl text-white bg-black p-8 font-semibold text-center xl:text-left"
-          >
+          <h1 class="text-8xl text-white bg-black p-8 font-semibold">
             Proximitynow
           </h1>
-          <h2
-            class="text-4xl font-semibold text-black bg-white p-8 text-center xl:text-left"
-          >
+          <h2 class="text-4xl font-semibold text-black bg-white p-8">
             Bummerland Here I am
           </h2>
         </div>
       </div>
-      <h1
-        class="text-8xl text-white bg-black p-8 font-semibold text-center xl:text-left"
-      >
-        Projects
-      </h1>
+      <h1 class="text-8xl text-white bg-black p-8 font-semibold">Local Time</h1>
+      <div class="flex flex-col space-y-8 text-black bg-white p-8 text-center">
+        <h2
+          class="text-4xl font-semibold"
+          target="_blank"
+          href="https://tetr.js.org/"
+          id="localClock"
+        ></h2>
+        <h4 id="timeDesc" class="font-semibold text-lg"></h4>
+      </div>
+      <h1 class="text-8xl text-white bg-black p-8 font-semibold">Projects</h1>
       <div
         class="flex flex-col lg:flex-row space-y-8 lg:space-y-0 lg:space-x-8 items-center justify-center"
       >
         <a
-          class="text-4xl font-semibold text-black bg-white hover:text-white hover:bg-black p-8 text-center xl:text-left"
+          class="text-4xl font-semibold text-black bg-white hover:text-white hover:bg-black p-8"
           target="_blank"
           href="https://tetr.js.org/"
         >
           TETR.JS</a
         >
         <a
-          class="text-4xl font-semibold text-black bg-white hover:text-white hover:bg-black p-8 text-center xl:text-left"
+          class="text-4xl font-semibold text-black bg-white hover:text-white hover:bg-black p-8"
           target="_blank"
           href="https://pulsebot.xyz/"
         >
           Pulse
         </a>
         <a
-          class="text-4xl font-semibold text-black bg-white hover:text-white hover:bg-black p-8 text-center xl:text-left"
+          class="text-4xl font-semibold text-black bg-white hover:text-white hover:bg-black p-8"
           target="_blank"
           href="https://69420.lol/"
         >
           69420.LOL
         </a>
         <a
-          class="text-4xl font-semibold text-black bg-white hover:text-white hover:bg-black p-8 text-center xl:text-left"
+          class="text-4xl font-semibold text-black bg-white hover:text-white hover:bg-black p-8"
           target="_blank"
           href="https://rangi.xyz/app/login"
         >
           RangiHub
         </a>
       </div>
-      <h1
-        class="text-8xl text-white bg-black p-8 font-semibold text-center xl:text-left"
-      >
-        Socials
-      </h1>
+      <h1 class="text-8xl text-white bg-black p-8 font-semibold">Socials</h1>
       <div
         class="flex flex-col lg:flex-row space-y-8 lg:space-y-0 lg:space-x-8 items-center justify-center"
       >
         <a
-          class="text-4xl font-semibold text-black bg-white hover:text-white hover:bg-black p-8 text-center xl:text-left"
+          class="text-4xl font-semibold text-black bg-white hover:text-white hover:bg-black p-8"
           target="_blank"
           href="https://github.com/Proximitynow19/"
         >
           <i class="fab fa-github"></i></a
         ><a
-          class="text-4xl font-semibold text-black bg-white hover:text-white hover:bg-black p-8 text-center xl:text-left"
+          class="text-4xl font-semibold text-black bg-white hover:text-white hover:bg-black p-8"
           target="_blank"
           href="https://open.spotify.com/artist/42KtVEqRV2suKYQsONWi8q"
         >
           <i class="fab fa-spotify"></i></a
         ><a
-          class="text-4xl font-semibold text-black bg-white hover:text-white hover:bg-black p-8 text-center xl:text-left"
+          class="text-4xl font-semibold text-black bg-white hover:text-white hover:bg-black p-8"
           target="_blank"
           href="https://www.instagram.com/jakob.deguzman/"
         >
           <i class="fab fa-instagram"></i></a
         ><a
-          class="text-4xl font-semibold text-black bg-white hover:text-white hover:bg-black p-8 text-center xl:text-left"
+          class="text-4xl font-semibold text-black bg-white hover:text-white hover:bg-black p-8"
           target="_blank"
           href="https://www.twitch.tv/proximitynow"
         >
           <i class="fab fa-twitch"></i></a
         ><a
-          class="text-4xl font-semibold text-black bg-white hover:text-white hover:bg-black p-8 text-center xl:text-left"
+          class="text-4xl font-semibold text-black bg-white hover:text-white hover:bg-black p-8"
           target="_blank"
           href="https://www.youtube.com/channel/UCk69c_PXxwI_r4fW55uSDrg"
         >
           <i class="fab fa-youtube"></i></a
         ><a
-          class="text-4xl font-semibold text-black bg-white hover:text-white hover:bg-black p-8 text-center xl:text-left"
+          class="text-4xl font-semibold text-black bg-white hover:text-white hover:bg-black p-8"
           target="_blank"
           href="https://twitter.com/JakobDeGuzman"
         >
           <i class="fab fa-twitter"></i></a
         ><a
-          class="text-4xl font-semibold text-black bg-white hover:text-white hover:bg-black p-8 text-center xl:text-left"
+          class="text-4xl font-semibold text-black bg-white hover:text-white hover:bg-black p-8"
           target="_blank"
           href="https://discord.com/invite/e3vFHq9WZz"
         >
